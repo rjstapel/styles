@@ -185,8 +185,9 @@
             <choose>
               <if variable="title" match="none"/>
               <else-if type="thesis">
-                <text variable="genre" prefix="unpublished " suffix=","/>
-                <text macro="publisher"/>
+                <text variable="genre"/>
+                <text variable="publisher" suffix=","/>
+                <text variable="publisher-place"/>
                 <text macro="issued"/>
               </else-if>
               <else-if type="speech">
